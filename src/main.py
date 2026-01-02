@@ -1,5 +1,4 @@
-def main():
-    print("Hello, Python project 🚀")
+from text_analyzer.analyze import analyze_file
 
-if __name__ == "__main__":
-    main()
+report = analyze_file("data/sample.txt", top_n=10)
+print(report)
